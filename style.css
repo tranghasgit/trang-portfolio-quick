@@ -25,7 +25,7 @@
 body{
   max-width: 100%;
   margin: 0 auto;
-  background-color: lightgrey;
+  background-color: rgb(241, 249, 225);
   color: rgb(27, 84, 255);
   /* overflow: hidden; */
 }
@@ -33,7 +33,7 @@ body{
 .menu-wrapper{
   width: 100%;
   margin: 0 auto;
-  background-color: lightgrey;
+  background-color: none;
   font-family: 'Necto Mono', monospace;
   font-size: 1.2em;
   border-bottom: solid black 1px;
