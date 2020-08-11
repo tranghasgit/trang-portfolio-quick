@@ -1,4 +1,8 @@
+
+
+
 $(document).ready(function(){
+
 
 
 //PRINTS================
@@ -82,18 +86,13 @@ $(document).ready(function(){
   //   });
   // });
 
-
-
-
-
-
-
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
   var lazyloadImages = document.querySelectorAll("img.lazy");
   var lazyloadThrottleTimeout;
-  
+
   function lazyload () {
     if(lazyloadThrottleTimeout) {
       clearTimeout(lazyloadThrottleTimeout);

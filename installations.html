@@ -1,4 +1,4 @@
-seems<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -12,12 +12,14 @@ seems<!DOCTYPE html>
   </head>
   <body>
     <a href="#top"></a>
+    <div class="mobile-menu-left nav-style"><p>&#8592;</p></div>
+    <div class="mobile-menu-right nav-style"><p>&#8594;</p></div>
     <div class="menu-wrapper">
-      <ul class="menu-list">
-        <li class="list-item prints"><a href="prints.html">PRINTS</a></li>
-        <li class="list-item installations"><a href="installations.html">INSTALLATIONS</a></li>
-        <li class="list-item performances"><a href="performances.html">PERFORMANCES</a></li>
-        <li class="list-item sites"><a href="sites.html">WEBSITES</a></li>
+      <ul class="menu-list mobile">
+        <li class="list-item installations-installations"><a href="installations.html">INSTALLATIONS</a></li>
+        <li class="list-item installations-performances"><a href="performances.html">PERFORMANCES</a></li>
+        <li class="list-item installations-sites"><a href="sites.html">WEBSITES</a></li>
+        <li class="list-item installations-prints"><a href="prints.html">PRINTS</a></li>
       </ul>
     </div>
     <div class="main-wrapper">
@@ -126,11 +128,31 @@ seems<!DOCTYPE html>
     </div>
     <div class="menu-wrapper sticky">
       <ul class="menu-list">
-        <li class="list-item home"><a href="index.html">&#8592;FRONT PAGE</a></li>
+        <li class="list-item home"><a href="index.html">&#8592;HOME</a></li>
         <li class="list-item installations"><a href="#"></a></li>
         <li class="list-item performances"><a href="#"></a></li>
         <li class="list-item sites"><a href="#top"><span class="arrow">&#8593;</span>TOP</a></li>
       </ul>
     </div>
+
+    <script type="text/javascript">
+
+      var all = $('.mobile li').addClass("passiv");
+      var i = -1;
+
+      $('.mobile-menu-left').click(function() {
+          ctrlKunder( i = !i ? all.length - 1 : --i );
+      });
+      $('.mobile-menu-right').click(function() {
+          ctrlKunder( i = ++i % all.length );
+      }).click();
+
+      function ctrlKunder(ele) {
+          all.removeClass("active").addClass("passiv");
+          all.eq(ele).removeClass("passiv").addClass("active");
+      }
+
+    </script>
+
   </body>
 </html>

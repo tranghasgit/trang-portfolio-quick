@@ -12,12 +12,14 @@
   </head>
   <body>
     <a href="#top"></a>
+    <div class="mobile-menu-left nav-style"><p>&#8592;</p></div>
+    <div class="mobile-menu-right nav-style"><p>&#8594;</p></div>
     <div class="menu-wrapper">
-      <ul class="menu-list">
-        <li class="list-item prints"><a href="prints.html">PRINTS</a></li>
-        <li class="list-item installations"><a href="installations.html">INSTALLATIONS</a></li>
-        <li class="list-item performances"><a href="performances.html">PERFORMANCES</a></li>
-        <li class="list-item sites"><a href="sites.html">WEBSITES</a></li>
+      <ul class="menu-list mobile">
+        <li class="list-item performances-performances"><a href="performances.html">PERFORMANCES</a></li>
+        <li class="list-item performances-sites"><a href="sites.html">WEBSITES</a></li>
+        <li class="list-item performances-prints"><a href="prints.html">PRINTS</a></li>
+        <li class="list-item performances-installations"><a href="installations.html">INSTALLATIONS</a></li>
       </ul>
     </div>
     <div class="main-wrapper">
@@ -42,7 +44,7 @@
           <img src="img/performance_2018/PER_beastHands_9.jpg" alt="">
         </div>
         <div class="text-wrapper">
-          <p class="left-margin-indent">“Next image: two human hands—an exemplary referenceto handicraft—are caught in an attempt to touch. Acting like magnets, they never reach each other. “Who or what is acting in a culture of constant mediation?,” wonder curators of transmediale, the yearly festival on media and technology. The video-logo of 2017 edition called ever elusive (nota bene designed in an iPhone screen format) refers to the destabilised centrality of the human in nowadays media culture. The main actor, who had mastered his tools during the past few centuries, created a stage of information systems and hybrid techno-ecologies, which in turn started to be an entity on its own. In other words, the elusive character of today’s media feeds and obscures new forms of agency—in which human no longer plays an active role. [transmediale www] How does recent technology influence the dynamic between human and non-human, subject and object? What is the role of analog and digital craft in relation to human, understood as the dychotomy of body and mind? Is this division still valid?”—Beast Without Hands, Trang Ha & Zuzanna Zgierska, 2018
+          <p class="left-margin-indent">“Next image: two human hands—an exemplary referenceto handicraft—are caught in an attempt to touch. Acting like magnets, they never reach each other. “Who or what is acting in a culture of constant mediation?,” wonder curators of transmediale, the yearly festival on media and technology. The video-logo of 2017 edition called ever elusive (nota bene designed in an iPhone screen format) refers to the destabilised centrality of the human in nowadays media culture. The main actor, who had mastered his tools during the past few centuries, created a stage of information systems and hybrid techno-ecologies, which in turn started to be an entity on its own. In other words, the elusive character of today’s media feeds and obscures new forms of agency—in which human no longer plays an active role. [<a href="https://transmediale.de/content/ever-elusive" target='_blank'>transmediale</a>] How does recent technology influence the dynamic between human and non-human, subject and object? What is the role of analog and digital craft in relation to human, understood as the dychotomy of body and mind? Is this division still valid?”—Beast Without Hands, Trang Ha & Zuzanna Zgierska, 2018
           <br>
           <br>
           In collaboration with Zuzanna Zgierska. The project is divided into two parts: the text and the performance.
@@ -89,11 +91,31 @@
     </div>
     <div class="menu-wrapper sticky">
       <ul class="menu-list">
-        <li class="list-item home"><a href="index.html">&#8592;FRONT PAGE</a></li>
+        <li class="list-item home"><a href="index.html">&#8592;HOME</a></li>
         <li class="list-item installations"><a href="#"></a></li>
         <li class="list-item performances"><a href="#"></a></li>
         <li class="list-item sites"><a href="#top"><span class="arrow">&#8593;</span>TOP</a></li>
       </ul>
     </div>
+
+    <script type="text/javascript">
+
+      var all = $('.mobile li').addClass("passiv");
+      var i = -1;
+
+      $('.mobile-menu-left').click(function() {
+          ctrlKunder( i = !i ? all.length - 1 : --i );
+      });
+      $('.mobile-menu-right').click(function() {
+          ctrlKunder( i = ++i % all.length );
+      }).click();
+
+      function ctrlKunder(ele) {
+          all.removeClass("active").addClass("passiv");
+          all.eq(ele).removeClass("passiv").addClass("active");
+      }
+
+    </script>
+
   </body>
 </html>
