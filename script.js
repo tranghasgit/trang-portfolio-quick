@@ -3,7 +3,16 @@
 
 $(document).ready(function(){
 
-
+var screenH = $(window).outerHeight();
+var screenW = $(window).outerWidth();
+var divH = $('.mobile-alert-instruction').outerHeight();
+var divW = $('.mobile-alert-instruction').outerWidth();
+var midOffsetH = (screenH-divH)/2;
+var midOffsetW = (screenW-divW)/2;
+$('.mobile-alert-instruction').css('top', midOffsetH, 'left', midOffsetW);
+$('.mobile-alert-instruction').click(function(){
+  $(this).remove();
+});
 
 //PRINTS================
   $('.img-prints-target0').each(function(){

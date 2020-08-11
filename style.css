@@ -169,6 +169,7 @@ img{
 .align-center{text-align: center;}
 .title-highlight{color: black;}
 .home-top{display: none;}
+.mobile-alert-instruction{display: none;}
 
 
 /*      CONTACT PAGE      */
@@ -205,6 +206,7 @@ img{
 
 /* Media Queries: Tabled Portrait */
 @media screen and (max-width: 768px) {
+
   .nav-style{
     width: 4em;
     height: 2em;
@@ -221,7 +223,7 @@ img{
     padding: 0;
     font-family: 'Cirrus', monospace;
     font-size: 2em;
-    line-height: 0.8em;
+    line-height: 1em;
   }
 
   .mobile-menu-left{left:0;}
@@ -336,13 +338,35 @@ img{
   /*      NAV CHOOSING CATEGORIES      */
   .active{z-index: 700;}
   .passiv{z-index: 200;}
-  /* .home-top{z-index: 500;} */
-
   .home-top{z-index: 500;}
   .prints-prints{z-index: 500;}
   .installations-installations{z-index: 500;}
   .performances-performances{z-index: 500;}
   .sites-sites{z-index: 500;}
 
+
+
+  /*      instructions nav      */
+  .mobile-alert-instruction{
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    width: 60%;
+    padding: 3% 0 3% 0;
+    left: 18%;
+    background-color: rgb(241, 249, 225);
+    border: solid 1px rgb(27, 84, 255);
+  }
+
+  .mobile-alert-instruction p{
+    margin: 5%;
+    line-height: 1em;
+    color: black;
+    font-family: 'Cirrus', monospace;
+    font-size: 2em;
+  }
+  .blue{
+    color: rgb(27, 84, 255);
+  }
 
 }
