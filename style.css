@@ -347,19 +347,20 @@ img{
 
 
   /*      instructions nav      */
+
   .mobile-alert-instruction{
     display: block;
     z-index: 1000;
     position: fixed;
     width: 60%;
-    padding: 3% 0 3% 0;
+    /* padding: 3% 0 3% 0; */
     left: 18%;
     background-color: rgb(241, 249, 225);
     border: solid 1px rgb(27, 84, 255);
   }
 
   .mobile-alert-instruction p{
-    margin: 5%;
+    margin: 3% 3% 12% 3%;
     line-height: 1em;
     color: black;
     font-family: 'Cirrus', monospace;
@@ -368,5 +369,10 @@ img{
   .blue{
     color: rgb(27, 84, 255);
   }
-
+  .change-font{
+    position: absolute;
+    background-color: none;
+    font-family: 'Necto Mono', monospace;
+    font-size: 1em;
+  }
 }
