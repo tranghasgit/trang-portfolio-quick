@@ -179,6 +179,7 @@ img{
 
 
 .mobile{display: none;}
+.desktop{display: block;}
 /* .italics{font-family: 'Cirrus', monospace;  color: rgb(27, 84, 255); padding: 2%;font-size: 1.5em;border: solid 1px rgb(27, 84, 255);} */
 
 /* .home{font-family: 'Cirrus', monospace; font-size: 5em; color: white;} */
@@ -343,6 +344,7 @@ img{
   .installations-installations{z-index: 500;}
   .performances-performances{z-index: 500;}
   .sites-sites{z-index: 500;}
+  .desktop{display: none;}
 
 
 
