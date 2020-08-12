@@ -178,7 +178,7 @@ img{
 
 
 
-
+.mobile{display: none;}
 /* .italics{font-family: 'Cirrus', monospace;  color: rgb(27, 84, 255); padding: 2%;font-size: 1.5em;border: solid 1px rgb(27, 84, 255);} */
 
 /* .home{font-family: 'Cirrus', monospace; font-size: 5em; color: white;} */
@@ -206,7 +206,7 @@ img{
 
 /* Media Queries: Tabled Portrait */
 @media screen and (max-width: 768px) {
-
+  .mobile{display: block;}
   .nav-style{
     width: 4em;
     height: 2em;
