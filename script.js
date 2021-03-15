@@ -14,14 +14,13 @@ $('.mobile-alert-instruction').click(function(){
   $(this).remove();
 });
 
-// var scrollIntoView = require('scroll-into-view');
+
+
 //PRINTS================
   $('.img-prints-target0').each(function(){
     $(this).click(function(){
       var sel = $(this).find('img').attr('src');
       var cap = $(this).find('img').attr('alt');
-      // var offset = $('.img-prints-result0').offset().top-15;
-      // $('html, body').scrollTop(offset);
       $('.img-prints-result0').find('img').attr('src', sel);
       $('.prints-caption0').find('p').text(cap);
     });
@@ -30,8 +29,6 @@ $('.mobile-alert-instruction').click(function(){
     $(this).click(function(){
       var sel = $(this).find('img').attr('src');
       var cap = $(this).find('img').attr('alt');
-      // var offset = $('.img-prints-result1').offset().top-15;
-      // $('html, body').scrollTop(offset);
       $('.img-prints-result1').find('img').attr('src', sel);
       $('.prints-caption1').find('p').text(cap);
     });
@@ -40,8 +37,6 @@ $('.mobile-alert-instruction').click(function(){
     $(this).click(function(){
       var sel = $(this).find('img').attr('src');
       var cap = $(this).find('img').attr('alt');
-      // var offset = $('.img-prints-result2').offset().top-15;
-      // $('html, body').scrollTop(offset);
       $('.img-prints-result2').find('img').attr('src', sel);
       $('.prints-caption2').find('p').text(cap);
     });
@@ -54,8 +49,6 @@ $('.mobile-alert-instruction').click(function(){
     $(this).click(function(){
       var sel = $(this).find('img').attr('src');
       var cap = $(this).find('img').attr('alt');
-      // var offset = $('.img-install-result0').offset().top-15;
-      // $('html, body').scrollTop(offset);
       $('.img-install-result0').find('img').attr('src', sel);
       $('.install-caption0').find('p').text(cap);
     });
@@ -64,8 +57,6 @@ $('.mobile-alert-instruction').click(function(){
     $(this).click(function(){
       var sel = $(this).find('img').attr('src');
       var cap = $(this).find('img').attr('alt');
-      // var offset = $('.img-install-result1').offset().top-15;
-      // $('html, body').scrollTop(offset);
       $('.img-install-result1').find('img').attr('src', sel);
       $('.install-caption1').find('p').text(cap);
     });
@@ -74,10 +65,35 @@ $('.mobile-alert-instruction').click(function(){
     $(this).click(function(){
       var sel = $(this).find('img').attr('src');
       var cap = $(this).find('img').attr('alt');
-      // var offset = $('.img-install-result2').offset().top-15;
-      // $('html, body').scrollTop(offset);
       $('.img-install-result2').find('img').attr('src', sel);
       $('.install-caption2').find('p').text(cap);
+    });
+  });
+
+
+//VIDEOS================
+  $('.img-videos-target0').each(function(){
+    $(this).click(function(){
+      var sel = $(this).find('img').attr('src');
+      var cap = $(this).find('img').attr('alt');
+      $('.img-videos-result0').find('img').attr('src', sel);
+      $('.videos-caption0').find('p').text(cap);
+    });
+  });
+  $('.img-videos-target1').each(function(){
+    $(this).click(function(){
+      var sel = $(this).find('img').attr('src');
+      var cap = $(this).find('img').attr('alt');
+      $('.img-videos-result1').find('img').attr('src', sel);
+      $('.videos-caption1').find('p').text(cap);
+    });
+  });
+  $('.img-videos-target2').each(function(){
+    $(this).click(function(){
+      var sel = $(this).find('img').attr('src');
+      var cap = $(this).find('img').attr('alt');
+      $('.img-videos-result2').find('img').attr('src', sel);
+      $('.videos-caption2').find('p').text(cap);
     });
   });
 
@@ -101,12 +117,6 @@ $('.mobile-alert-instruction').click(function(){
       $('.perform-caption1').find('p').text(cap);
     });
   });
-  // $('.img-perform-target2').each(function(){
-  //   $(this).click(function(){
-  //     var sel = $(this).find('img').attr('src');
-  //     $('.img-perform-result2').find('img').attr('src', sel);
-  //   });
-  // });
 
 });
 
