@@ -363,7 +363,7 @@ img{
   .prints-grid{
     display: grid;
     margin:.5em;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-gap: .5em;
   }
