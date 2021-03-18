@@ -165,8 +165,25 @@ img{
   color: black;
 }
 
-.bottom{margin-bottom: 10%;}
-
+/*       PROJECT PAGE — PRINTS Extra      */
+.more-prints{margin:1em;}
+/* .more-prints h1{line-height: 1em;} */
+.print-caps-extra{
+  font-family: 'Helvetica', sans-serif;
+  font-size: .8em;
+  line-height: .1em;
+}
+.prints-italic{font-style: italic;}
+.prints-grid{
+  display: grid;
+  margin:.5em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: .5em;
+}
+.prints-grid-items{
+  height: auto;
+}
 
 /*      HOME PAGE      */
 .align-center{text-align: center;}
@@ -189,6 +206,9 @@ img{
 .mobile-menu-left{left:0}
 .mobile-menu-right{right:0}
 
+/*       HELPERS       */
+.top{margin-top: 10%;}
+.bottom{margin-bottom: 10%;}
 
 /* Media Queries: Tablet Landscape */
 @media screen and (max-width: 1700px) {
@@ -200,6 +220,10 @@ img{
   .img-wrapper{
     padding-top: 2%;
   }
+
+  /*       HELPERS       */
+  .top{margin-top: 10%;}
+  .bottom{margin-bottom: 10%;}
 }
 
 @media screen and (max-width: 1200px) {
@@ -327,11 +351,30 @@ img{
     margin-left: 2%;
   }
 
-  .bottom{
-    margin-bottom: 8%;
-
-
+  /*       PROJECT PAGE — PRINTS Extra      */
+  .more-prints{margin:1em;}
+  /* .more-prints h1{line-height: 1em;} */
+  .print-caps-extra{
+    font-family: 'Helvetica', sans-serif;
+    font-size: .8em;
+    line-height: .1em;
   }
+  .prints-italic{font-style: italic;}
+  .prints-grid{
+    display: grid;
+    margin:.5em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: .5em;
+  }
+  .prints-grid-items{
+    height: auto;
+  }
+
+
+  /*       HELPERS       */
+  .top{margin-top: 10%;}
+  .bottom{margin-bottom: 10em;}
 
   /*      HOME PAGE      */
   .align-center{text-align: center;}
@@ -497,7 +540,30 @@ img{
     margin-left: 2%;
   }
 
-  .bottom{margin-bottom: 8%;}
+  /*       PROJECT PAGE — PRINTS Extra      */
+  .more-prints{margin:1em;}
+  /* .more-prints h1{line-height: 1em;} */
+  .print-caps-extra{
+    font-family: 'Helvetica', sans-serif;
+    font-size: .8em;
+    line-height: .1em;
+  }
+  .prints-italic{font-style: italic;}
+  .prints-grid{
+    display: grid;
+    margin:.5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: .5em;
+  }
+  .prints-grid-items{
+    height: auto;
+  }
+
+
+  /*       HELPERS       */
+  .top{margin-top: 10%;}
+  .bottom{margin-bottom: 10em;}
 
 
   /*      HOME PAGE      */
