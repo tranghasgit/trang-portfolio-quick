@@ -1,0 +1,8 @@
+<glyph name="Oacute" format="2">
+  <advance width="983"/>
+  <unicode hex="00D3"/>
+  <outline>
+    <component base="acute" xOffset="477" yOffset="50"/>
+    <component base="O"/>
+  </outline>
+</glyph>

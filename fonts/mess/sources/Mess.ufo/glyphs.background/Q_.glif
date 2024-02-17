@@ -1,0 +1,18 @@
+<glyph name="Q" format="2">
+  <advance width="900"/>
+  <outline>
+    <contour>
+      <point x="592" y="-47" type="move"/>
+      <point x="650" y="-148"/>
+      <point x="724" y="-215"/>
+      <point x="824" y="-215" type="curve" smooth="yes"/>
+      <point x="850" y="-215" type="line"/>
+      <point x="850" y="-165" type="line"/>
+      <point x="830" y="-153" type="line"/>
+      <point x="797" y="-167" type="line"/>
+      <point x="739" y="-167"/>
+      <point x="711" y="-137"/>
+      <point x="668" y="-50" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>
