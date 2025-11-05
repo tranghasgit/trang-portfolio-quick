@@ -43,9 +43,12 @@ body{
   margin: 0 auto;
   /* background-color: rgb(241, 249, 225); */
   /* background-color: rgb(219, 219, 219); */
-  background-color: rgb(48, 28, 1);
-  color: rgb(27, 84, 255);
+  /* background-color: rgb(48, 28, 1); */
+  background-color: white;
+  /* color: rgb(27, 84, 255); */
+  color: black;
   overflow-x: hidden;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -63,10 +66,12 @@ body {
 a{
   /* text-decoration: underline; */
   text-decoration: none;
-  color: rgb(27, 84, 255);
+  /* color: rgb(27, 84, 255); */
+  color: black;
 }
 a:visited{
-  color: rgb(27, 84, 255);
+  /* color: rgb(27, 84, 255); */
+  color: black;
 }
 
 h1{
@@ -114,22 +119,43 @@ img{
 }
 
 p{
-  line-height: 1.15em;
+  line-height: 1.2em;
 }
+
 .new-soon{
-  width: 90%;
+  width: 55%;
   margin: auto;
+  padding-top: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
   /* background-color: red; */
 }
+
+@media only screen and (max-width: 600px) {
+  .new-soon{
+    width: 95%;
+    margin: auto;
+    padding-top: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: red; */
+  }
+}
+
 .new-soon a:hover{
-  color: white;
+  color: grey;
 }
 .new-soon .p_new-soon:last-child{
   padding-bottom: 2em;
   /* background-color: red; */
 }
 .email{
-  color: white;
+  /* color: rgb(27, 84, 255); */
+  color: black;
 }
 
 .menu-cap{
@@ -153,9 +179,12 @@ p{
   margin-bottom: 1%;
 }
 .new-soon p{
-  text-align: left;
-  font-size: 2em;
-  font-family: "Helvetica Neue";
+  /* text-align: left; */
+  font-size: 0.8em;
+}
+
+.main-image{
+  /* width: 35em; */
 }
 
 #vegetables{
@@ -163,14 +192,16 @@ p{
 }
 #vegetables{
   /* color:rgb(52, 138, 0); */
-  color:rgb(140, 201, 103);
+  /* color: rgb(27, 84, 255); */
+  color: black;
 }
 #coffee{
   font-family: "FA";
 }
 #coffee{
   /* color:rgb(227, 82, 0); */
-  color:rgb(219, 179, 157);
+  /* color: rgb(27, 84, 255); */
+  color: black;
 }
 #store{
   font-family: "Mess";
