@@ -124,9 +124,9 @@ p{
 }
 
 .new-soon{
-  width: 55%;
+  width: 62%;
   margin: auto;
-  padding-top: 2em;
+  padding-top: 1.8em;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -136,9 +136,9 @@ p{
 
 @media only screen and (max-width: 600px) {
   .new-soon{
-    width: 95%;
+    width: 98%;
     margin: auto;
-    padding-top: 2em;
+    padding-top: 1.8em;
     text-align: center;
     display: flex;
     flex-direction: column;
